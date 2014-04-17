@@ -1,5 +1,5 @@
-#ifndef _DUMMYPROJECT_DUMMY_HPP_
-#define _DUMMYPROJECT_DUMMY_HPP_
+#ifndef _ETHERNET_DRIVER_HPP_
+#define _ETHERNET_DRIVER_HPP_
 
 #include <iostream>
 
