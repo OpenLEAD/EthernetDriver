@@ -1,4 +1,5 @@
 #include "EthernetDrivers.hpp"
+#include <stdio.h>
 #include <stdexcept>
 
 namespace EthernetDrivers
@@ -83,8 +84,9 @@ EthDriver::EthDriver(char *bcast_addr, unsigned char mac[]){
 				l = l->next;
 			else
 			{
-				/*				sprintf(ip_addr,"%u.%u.%u.%u", (unsigned int) l->ip & 0xff, (unsigned int) (l->ip>>8) & 0xff, (unsigned int) (l->ip>>16) & 0xff, (unsigned int) (l->ip>>24) & 0xff);*/
+								sprintf(ip_addr,"%u.%u.%u.%u", (unsigned int) l->ip & 0xff, (unsigned int) (l->ip>>8) & 0xff, (unsigned int) (l->ip>>16) & 0xff, (unsigned int) (l->ip>>24) & 0xff);
 				Connect();
+				break;
 			}
 
 		}

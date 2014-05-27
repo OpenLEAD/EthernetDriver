@@ -76,7 +76,7 @@ private:
 	int pin;
 	sr_pin_type pull; //1= input, 0=output
 public:
-	inline void read(bool *b);
+	void read(bool *b);
 
 	GPIOin_Driver(const EthDriver& driver, int t_pin, sr_pin_type type = sr_pt_din_pullup);
 	GPIOin_Driver(char *ip_addr, int t_pin, sr_pin_type type = sr_pt_din_pullup); //ipv4 '\0' terminated device address
